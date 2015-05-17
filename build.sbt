@@ -6,12 +6,15 @@ organization := "com.github.anskarl"
 
 scalaVersion := "2.11.6"
 
+autoScalaLibrary := true
+
+managedScalaInstance := true
+
 // fork a new JVM for 'run' and 'test:run'
 fork := true
 
 // fork a new JVM for 'test:run', but not 'run'
 fork in Test := true
-
 
 /** Dependencies */
 resolvers ++= Seq(
@@ -29,3 +32,7 @@ libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % 
 
 // Unit testing
 libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.4" % "test"
+
+
+
+val publishSettings: Setting[_] = publishTo := Some(Resolver.file("file",  new File(Path.userHome.absolutePath+"/.m2/repository")))

@@ -128,7 +128,7 @@ package object prolog {
    * @return The resulting set of variables found in the given lists of terms, or an empty set if none is found.
    */
   def collectVariablesLists(termLists: List[List[_ <: Term]]): Set[Variable] = {
-    /**
+    /*
      * Recursively collect all variables from list of term list
      *
      * @param terms list of term list
