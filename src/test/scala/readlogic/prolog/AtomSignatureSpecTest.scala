@@ -35,15 +35,15 @@ class AtomSignatureSpecTest extends FunSpec{
 
   describe("The signature of the predicate 'holdsAt(foo, 10)'"){
 
-    it("should have the symbol 'holdsAt'"){
+    it("contains the symbol 'holdsAt'"){
       assert(signature.symbol == "holdsAt")
     }
 
-    it("should have arity of 2"){
+    it("has arity of 2"){
       assert(signature.arity == 2)
     }
 
-    it("should be printed as 'holdsAt/2'"){
+    it("is printed as 'holdsAt/2'"){
       assert(signature.toString == "holdsAt/2")
     }
   }

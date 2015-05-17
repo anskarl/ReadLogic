@@ -25,14 +25,7 @@ libraryDependencies ++= Seq(
 )
 
 // Scala-modules
-libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "1.0.3"
-
-// Logging with slf4j and logback
-libraryDependencies ++= Seq(
-	"ch.qos.logback" % "logback-classic" % "1.1.2",
-	"ch.qos.logback" % "logback-core" % "1.1.2",
-	"org.slf4j" % "slf4j-api" % "1.7.10"
-)
+libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "1.0.4"
 
 // Unit testing
 libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.4" % "test"

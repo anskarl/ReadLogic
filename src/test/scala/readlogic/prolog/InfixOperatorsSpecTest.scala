@@ -33,9 +33,9 @@ class InfixOperatorsSpecTest extends FunSpec with Matchers {
    * Infix relational operators (rewrite)
    */
   val listRelOps = List(
-    //("=:=", "equals"),
-    //("""=\=""", "not_equals"),
-    ("<", "lessThat"),
+    ("=:=", "equals"),
+    ("""=\=""", "not_equals"),
+    ("<", "lessThan"),
     (">", "greaterThan"),
     ("=<", "lessThanEq"),
     (">=", "greaterThanEq")

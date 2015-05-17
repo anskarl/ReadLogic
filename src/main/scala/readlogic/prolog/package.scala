@@ -85,7 +85,6 @@ package object prolog {
     */
   private[prolog] lazy val infixRelOps = """(=[:\\]=)|([=]{0,1}<)|(>[=]{0,1})""".r
 
-
   private lazy val _negationPattern1 = """(not|\\\+)([ ]+)\((.*)""".r
 
   private lazy val _negationPattern2 = """(not|\\\+)([ ]+)(\S*.*)""".r

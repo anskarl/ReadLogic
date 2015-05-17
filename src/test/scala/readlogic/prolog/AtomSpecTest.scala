@@ -47,7 +47,7 @@ class AtomSpecTest extends FunSpec with Matchers {
     val strHappensAt = "happensAt(" + arg0.symbol + ", " + arg1.symbol + ")"
     val atomHappensAt = Atom("happensAt", List(arg0, arg1))
     val result = parser.parseAtom(strHappensAt)
-    val term0 = result.args.head
+    //val term0 = result.args.head
     val term1 = result.args.last
 
     describe("The sentence: '" + strHappensAt + "'") {
